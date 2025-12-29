@@ -16,6 +16,11 @@ body {
     line-height: 25px;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* Common */
 
 .center {
@@ -73,15 +78,6 @@ a {
     padding-bottom: 16px;
 }
 
-/* ======= Header ======= */
-.hero-wrap {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #e6f0ff;
-    height: 100vh;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -120,9 +116,19 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 114px;
+/* ======= Header ======= */
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
 }
+
+/* .hero {
+    margin-top: 114px;
+} */
 
 .hero .info {
     width: 51%;
@@ -205,10 +211,7 @@ a {
 /* Guides */
 .guides {
     margin-top: 40px;
-}
-
-.guides .content {
-    padding: 79px 0px;
+    padding: 93px 0px 79px;
 }
 
 .guides .desc {
@@ -251,7 +254,11 @@ a {
 .guides .guides-options {
     margin-top: 70px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.guides-options .options {
+    margin: 0 70px;
     text-align: center;
 }
 
