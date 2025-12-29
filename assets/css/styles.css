@@ -626,6 +626,24 @@ a {
     margin-top: 40px;
 }
 
+.footer .row .column .list-icon {
+    display: flex;
+    align-items: center;
+}
+
+.footer .row .column .list-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28.5px;
+    width: 28.5px;
+    margin-right: 16px;
+}
+
+.footer .row .column .list-icon a:hover {
+    background-color: #F9F9F9;
+}
+
 .footer .row .column .list-icon .social-icon:not(:first-child) {
     margin-left: 10.5px;
 }
